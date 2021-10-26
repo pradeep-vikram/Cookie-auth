@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Bubblegum+Sans|Caveat+Brush|Chewy|Lobster+Two");
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar {
+  border: 0;
+  z-index: 9999;
+  letter-spacing: 4px;
+}
+.logo {
+  display: block;
+  height: auto;
+  width: 52px;
+  padding-top: 5px;
+  margin-right: 15px;
+}
+
+.navbar-brand > img {
+  height: 100%;
+  padding: 15px; /* firefox bug fix */
+  width: auto;
+}
+.navbar .nav > li > a {
+  line-height: 50px;
+}
+
+.navbar-header h1 {
+  letter-spacing: 1px;
+  color: black !important;
+  font-family: "Lobster Two", cursive;
+}
+
+.navbar li a,
+.navbar {
+  color: black !important;
+  font-size: 12px;
+  transition: all 0.6s 0s;
+}
+
+.navbar li button a {
+  color: black !important;
+  font-size: 12px;
+  transition: all 0.6s 0s;
+}
+
+.navbar-toggle {
+  background-color: transparent !important;
+  border: 0;
+}
+
+.navbar-nav li a:hover,
+.navbar-nav li.active a {
+  color: red !important;
+}
+
+.outer-div {
+  position: relative;
+  margin-top: 200px;
+}
+.inner-div {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 100px;
+  padding-right: 100px;
+  height: 500px;
+  text-align: center;
+  background: url(data:image/png;base64,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);
+  background-size: cover;
+  width: 100%;
+  border-style: solid;
+  border-radius: 50px;
+}
+.text {
+  background-color: rosybrown;
+  margin-top: 200px;
+  color: white;
+  text-align: center;
+}
